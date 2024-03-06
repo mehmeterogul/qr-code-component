@@ -74,7 +74,7 @@ body {
 
 .text-container {
   padding: var(--padding);
-  padding-top: 0;
+  padding-top: 8px;
 }
 
 .qr-code-heading {
