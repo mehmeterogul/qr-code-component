@@ -1,0 +1,120 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  --main-font-size: 15px;
+  --heading-font-size: 22px;
+
+  --main-font-size-sm: 12px;
+  --heading-font-size-sm: 20px;
+
+  --mobile-layout-size: 375px;
+  --desktop-layout-size: 1440px;
+
+  --border-radius-size: 20px;
+
+  --padding: 16px;
+  --margin: 16px;
+
+  --padding-sm: 10px;
+  --margin-sm: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-size: var(--main-font-size);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: var(--desktop-layout-size);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code-component,
+.qr-code-image {
+  border-radius: var(--border-radius-size);
+}
+
+.qr-code-component {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  max-height: 497px;
+  padding: var(--padding);
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.047);
+}
+
+.qr-code-image {
+  width: 100%;
+}
+
+.text-container {
+  padding: var(--padding);
+}
+
+.qr-code-heading {
+  color: var(--dark-blue);
+  margin: var(--margin) 0;
+  font-size: var(--heading-font-size);
+  font-weight: 700;
+}
+
+.qr-code-description {
+  color: var(--grayish-blue);
+  font-size: var(--main-font-size);
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+
+  .text-container {
+    padding: var(--padding-sm) 0;
+  }
+
+  .qr-code-heading {
+    margin: var(--margin-sm) 0;
+    font-size: var(--heading-font-size-sm);
+  }
+
+  .qr-code-description {
+    font-size: var(--main-font-size-sm);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  background-color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
