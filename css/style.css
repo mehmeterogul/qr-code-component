@@ -64,6 +64,7 @@ body {
   max-width: 320px;
   max-height: 497px;
   padding: var(--padding);
+  padding-bottom: 24px;
   box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.047);
 }
 
@@ -87,7 +88,6 @@ body {
   color: var(--grayish-blue);
   font-size: var(--main-font-size);
   font-weight: 400;
-  margin-bottom: var(--margin);
 }
 
 @media only screen and (max-width: 375px) {
