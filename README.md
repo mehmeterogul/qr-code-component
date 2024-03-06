@@ -17,11 +17,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshots
 
 ![](screenshots/desktop.png)
-![](screenshots/mobile.png =x250)
+<img src="screenshots/mobile.png" height="200">
 
 ### Links
 
-- Solution URL: [Github repo](https://github.com/mehmeterogul/qr-code-component)
 - Live Site URL: [Github Pages](https://mehmeterogul.github.io/qr-code-component/)
 
 ## My process
