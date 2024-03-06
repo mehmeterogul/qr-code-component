@@ -87,6 +87,7 @@ body {
   color: var(--grayish-blue);
   font-size: var(--main-font-size);
   font-weight: 400;
+  margin-bottom: var(--margin);
 }
 
 @media only screen and (max-width: 375px) {
