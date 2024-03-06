@@ -47,9 +47,12 @@ body {
   justify-content: center;
 }
 
-.qr-code-component,
-.qr-code-image {
+.qr-code-component {
   border-radius: var(--border-radius-size);
+}
+
+.qr-code-image {
+  border-radius: 16px;
 }
 
 .qr-code-component {
@@ -70,6 +73,7 @@ body {
 
 .text-container {
   padding: var(--padding);
+  padding-top: 0;
 }
 
 .qr-code-heading {
@@ -113,8 +117,13 @@ body {
   font-size: 11px;
   text-align: center;
   background-color: white;
+  display: none;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.attribution p {
+  display: inline;
 }
